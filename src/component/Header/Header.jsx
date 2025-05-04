@@ -4,13 +4,14 @@ import { NavLink } from 'react-router';
 const Header = () => {
 
     const navBar = <>
-        <li><NavLink to="/login">Login</NavLink></li>
-        <li><NavLink to="/register">Register</NavLink></li>
-        <li><NavLink to="/heroRegister">HeroRegister</NavLink></li>
+        <li className='text-2xl bg-gray-200 rounded-md mr-3'><NavLink to="/">Home</NavLink></li>
+        <li className='text-2xl bg-gray-200 rounded-md mr-3'><NavLink to="/login">Login</NavLink></li>
+        <li className='text-2xl bg-gray-200 rounded-md mr-3'><NavLink to="/register">Register</NavLink></li>
+        <li className='text-2xl bg-gray-200 rounded-md mr-3'><NavLink to="/heroRegister">HeroRegister</NavLink></li>
     </>
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 bg-blue-200 mb-8 rounded-2xl">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
